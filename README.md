@@ -1,4 +1,4 @@
-# Cost Effective and Scalable Model Inference and Agentic AI on AWS Graviton with EKS
+# Cost Effective and Scalable Model Inference and Agentic AI on Amazon EKS
 
 ## Table of Contents
 
@@ -9,6 +9,7 @@
 - [Plan Your Deployment](#plan-your-deployment)
   - [Cost](#cost)
   - [Sample Cost Table](#sample-cost-table)
+  - [Third party dependencies disclaimer](#third-party-dependencies-disclaimer)
 - [Quick Start Guide](#quick-start-guide)
   - [Option 1: Automated Setup with Makefile (Recommended)](#option-1-automated-setup-with-makefile-recommended)
     - [Prerequisites](#prerequisites)
@@ -68,7 +69,7 @@ aws service-quotas get-service-quota --service-code ec2 --quota-code L-1216C47A
 
 **Cost Awareness:** This solution will incur AWS charges. Review the cost breakdown section below and set up billing alerts before deployment.
 
-## Infra Architecture
+## Infrastructure Architecture
 ![Architecture Diagram](image/Inference_GenAI_architecture_EKS.jpg)
 
 ## Agentic Application Architecture
@@ -135,9 +136,9 @@ As of August 2025, the cost for running this guidance with the default settings 
 
 We recommend creating a [budget](https://alpha-docs-aws.amazon.com/awsaccountbilling/latest/aboutv2/budgets-create.html) through [AWS Cost Explorer](http://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to help manage costs. Prices are subject to change. For full details, refer to the pricing webpage for each AWS service used in this guidance.
 
-### Sample cost table
+### Sample Cost Table
 
-The following table provides a sample cost breakdown for deploying this guidance with the default parameters in the `us-east-1` (N. Virginia) Region for one month. This estimate is based on the AWS Pricing Calculator output for the full deployment as per the guidance.
+The following table provides a sample cost breakdown for deploying this guidance with the default parameters in the `us-east-1` (N. Virginia) Region for one month. This estimate is based on the AWS Pricing Calculator output for the full deployment as per the guidance and as of September, 2025 was around **$447.47/mo** in the `us-east-1` region.
 
 | **AWS service** | Dimensions | Cost, month [USD] |
 |-----------------|------------|-------------------|
